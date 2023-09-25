@@ -1,0 +1,41 @@
+*
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+body
+{
+    margin: 40px;
+    background-image: url(https://w0.peakpx.com/wallpaper/550/560/HD-wallpaper-pikachu-w-human-face-colored-pokemon-face-human-pikachu.jpg);
+}
+.container
+{
+    background-color: rgb(88, 141, 37, 0.6);
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.header
+{
+    grid-column: 1/6;
+    border: 1px solid black;
+    color: brown;
+    text-align: center;
+}
+.article
+{
+    grid-column: 1/5;
+    border: 1px solid black;
+}
+.aside
+{
+    grid-column: 5/6;
+    grid-row: 2/53;
+    border: 1px solid black;
+}
+.footer
+{
+    grid-column: 1/6;
+    border: 1px solid black;
+}
