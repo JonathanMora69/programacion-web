@@ -3,129 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videojuegos</title>
+    <title>Videojuegos Store</title>
     <link rel="stylesheet" href="videojuegos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
 <body>
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Videojuegos</h1>
-            <nav>
-                <ul>
-                    <li class="nav">
-                        <a href="" class="outline">Inicio</a>
-                    </li>
-                    <li class="nav">
-                        <a href="" class="outline">Contacto</a>
-                    </li>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Videojuegos Store</h1>
+                <ul class="nav-list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
-            </nav>
-        </div>
-    </div>
-    <section class="showcase">
-        <div class="container">
-            <div class="grid">
-                <div class="grid-item-2">
-                    <div class="image">
-                        <img class="imagenPrincipal" src="images/videojuegos.jpg" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="grid-item-1">
-                    <div class="showcase-text">
-                        <h1>Te gustan los videojuegos?</h1>
-                        <p class="supporting-text">
-                            Este es el lugar indicado para comprar uno!
-                        </p>
-                        <div class="showcase-form">
-                            <form action="">
-                                <input type="email" placeholder="correo@gmail.com">
-                                <input type="submit" class="btn-contact" value="Contactar">
-                            </form>
-                        </div>
-                        <p>Solicita mas información:</p>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <div class="lower-container container">
-        <section class="stats">
-            <div class="flex">
-                <div class="stat">
-                    <i class="fa fa-folder fa-2x"></i>
-                    <h3 class="title">Juegos digitales</h3>
-                    <p class="text">
-                        Somos tu tienda de juegos digitales de confianza, donde encontrarás una amplia y diversa colección de los últimos títulos, clásicos atemporales y contenido exclusivo.
-                    </p>
-                </div>
-                <div class="stat">
-                    <i class="fa fa-user fa-2x"></i>
-                    <h3 class="title">Administración de usuarios</h3>
-                    <p class="text">
-                        Controla tu experiencia de juego con facilidad. Personaliza tu perfil, gestiona tus compras, y mantén un registro completo de tus juegos favoritos en un solo lugar.
-                    </p>
-                </div>
-                <div class="stat">
-                    <i class="fa fa-cogs fa-2x"></i>
-                    <h3 class="title">Configuraciones</h3>
-                    <p class="text">
-                        Personaliza y ajusta tu cuenta según tus preferencias. Aquí puedes actualizar tu información de perfil, modificar tus preferencias de notificaciones y establecer la configuración de privacidad para disfrutar de la mejor experiencia de juego a tu medida.
-                    </p>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bienvenido</h1>
+                    <p>Descubre una amplia selección de juegos digitales.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button class="btn-subscribe">Suscribirse</button>
+                    </form>
                 </div>
             </div>
         </section>
-    </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-gamepad fa-3x"></i>
+                <h2>Juegos Digitales</h2>
+                <p>Explora nuestra extensa colección de juegos digitales de alta calidad.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users fa-3x"></i>
+                <h2>Comunidad de Jugadores</h2>
+                <p>Únete a nuestra comunidad de jugadores, personaliza tu perfil y comparte tus logros.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-cogs fa-3x"></i>
+                <h2>Configuraciones Personalizadas</h2>
+                <p>Ajusta tu cuenta según tus preferencias y disfruta de la mejor experiencia de juego.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="testimonials">
         <div class="container">
-            <div class="testimonial grid-3">
-                <div class="card">
-                    <div class="circle">
-                        <img src="images/imagen1.jpg" alt="">
-                    </div>
-                    <h3 class="title-card">Variedad de juegos</h3>
-                    <p>
-                        Explora nuestra amplia y diversa colección de juegos que abarcan géneros, estilos y emociones,
-                    </p>
+            <h2>Lo que nuestros clientes dicen</h2>
+            <div class="testimonial">
+                <div class="testimonial-card">
+                    <img src="images/nintendo.png" alt="Cliente 1">
+                    <p>"Esta tienda tiene la mejor selección de juegos que he visto. ¡Altamente recomendado!"</p>
+                    <cite>- Juan Pérez</cite>
                 </div>
-                <div class="card">
-                    <div class="circle">
-                        <img src="images/nintendoxd.jpg" alt="">
-                    </div>
-                    <h3 class="title-card">Nintendo</h3>
-                    <p>
-                        ¿Amas Nintendo? ¡También nosotros! Descubre nuestro mundo de juegos y productos relacionados con Nintendo.                    </p>
+                <div class="testimonial-card">
+                    <img src="images/videojuegos.jpg" alt="Cliente 2">
+                    <p>"Amo los juegos de Nintendo y esta tienda tiene una gran variedad de títulos para elegir."</p>
+                    <cite>- María González</cite>
                 </div>
-                <div class="card">
-                    <div class="circle">
-                        <img src="images/xbox.png" alt="">
-                    </div>
-                    <h3 class="title-card">Xbox</h3>
-                    <p>
-                        ¿Eres un fan de Xbox? ¡Estás en el lugar adecuado! Explora nuestro catálogo de juegos, accesorios y contenido relacionado con Xbox para satisfacer tu pasión por esta emocionante plataforma de juego                    </p>
+                <div class="testimonial-card">
+                    <img src="images/xbox.png" alt="Cliente 3">
+                    <p>"Como fan de Xbox, encontré todos los juegos que quería aquí. ¡Excelente servicio!"</p>
+                    <cite>- Carlos Rodríguez</cite>
                 </div>
             </div>
         </div>
     </section>
+
     <footer>
-        <div class="container grid-1">
-            <div class="copyright">
-                <h3>JounaPokemon Tienda</h3>
-                <p>Copyright &copy; 2023</p>
+        <div class="container">
+            <div class="footer-logo">Videojuegos Store</div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <nav class="links">
-                <ul>
-                    <li><a href="#" class="outline">Home</a></li>
-                    <li><a href="#" class="outline">Acerca de</a></li>
-                    <li><a href="mailto:202200487@upqroo.edu.mx" class="outline">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="profiles">
-                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fa fa-whatsapp fa-2x"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+            <div class="footer-links">
+                <a href="#">Inicio</a>
+                <a href="#">Catálogo</a>
+                <a href="#">Contacto</a>
             </div>
         </div>
     </footer>

@@ -1,244 +1,179 @@
+/* Reset de estilos básicos */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
 }
 
+/* Estilos generales */
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #9f4646;
     color: #333;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 0;
-    line-height: 1.2;
-    color: #333;
-}
-
-h2 {
-    font-size: 25px;
-    font-weight: 300;
-    margin: 10px 0;
-    line-height: 1.2;
-}
-
-.imagenPrincipal{
-    width: 80%;
-
-}
-img {
-    width: 100%;
-}
-
-li {
-    list-style-type: none;
-}
-
-p {
-    font-size: 25px;
-    margin: 10px 0;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1200px;
-    overflow: visible;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* Estilos para la barra de navegación */
 .navbar {
-    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
-    height: 70px;
-    padding: 0 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-.navbar h1 {
-    font-size: 30px;
-    font-weight: 300;
-    margin: 10px 0;
-    line-height: 1.2;
-    color: #333;
-}
-
-.navbar .flex {
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
-.navbar ul {
+.logo {
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
     display: flex;
 }
 
-.navbar a {
-    color: #333;
-    padding: 9px;
-    margin: 10px 0;
+.nav-list li {
+    margin-right: 20px;
 }
 
-.navbar a:hover {
-    color: #f0e68c;
-    border-bottom: 3px solid #fff;
-}
-
-.showcase {
-    height: 300px;
-    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
-}
-
-.showcase p {
-    margin-bottom: 30px;
-}
-
-.showcase img {
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-}
-
-.showcase-form {
-    padding-left: 7px;
-}
-
-.grid {
-    overflow: visible;
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-
-.grid-item-1, .grid-item-2 {
-    position: relative;
-    top: 50px;
-}
-
-.showcase input[type='email'] {
-    padding: 10px 70px 10px 0;
-    font-size: 14px;
-    border: none;
-    border-radius: 6px;
-    padding-left: 6px;
-}
-
-.btn {
-    border-radius: 6px;
-    padding: 12px 20px;
-    background-color: #f2aa24;
-    border: none;
-    margin-left: 10px;
+.nav-list a {
     color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.litle-info {
-    font-size: 15px;
-    font-family: "poppins", sans-serif;
+.nav-list a:hover {
+    color: #f2aa24;
 }
 
-.lower-container {
-    margin: 120px auto;
-    padding: 0;
-    max-width: 1400px;
+/* Estilos para el encabezado */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
 }
 
-.title {
-    color: #333;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.text {
-    color: #333;
-    font-size: 19px;
-    width: 100%;
-    padding: 10px;
-    margin: 0 20px;
-    text-align: justify;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
-.flex {
+.newsletter-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
-.stats {
-    padding: 45px 50px;
-    text-align: center;
-}
-
-.stat {
-    margin: 0 30px;
-    text-align: center;
-    width: 800px;
-}
-
-.stats .fa {
-    color: #f0f0f0; /* Cambiar a un tono de gris claro */
-}
-
-.testimonial {
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.testimonial img {
-    height: 100%;
-    clip-path: circle();
-}
-
-.testimonial h3 {
-    text-align: center;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.card {
+.newsletter-form input[type='email'] {
     padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.btn-subscribe {
+    padding: 10px 20px;
+    background-color: #f2aa24;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-subscribe:hover {
+    background-color: #f0e68c;
+}
+
+/* Estilos para las características */
+.features {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2), 7px 7px 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+    text-align: center;
 }
 
-.circle {
-    background-color: transparent;
-    border: 3px solid #f2aa24; /* Mantener el color naranja */
-    height: 90px;
-    position: relative;
-    top: 30px;
-    left: 120px;
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature i {
+    font-size: 48px;
+    color: #f2aa24;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para testimonios */
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    width: 90px;
+    margin: 0 auto 10px;
 }
 
-.title-card {
-    margin-top: 40px;
-    font-size: 150%;
+.testimonial-card p {
+    font-size: 18px;
 }
 
+.testimonial-card cite {
+    font-style: italic;
+}
+
+/* Estilos para el pie de página */
 footer {
-    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
-    padding: 20px 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-footer a {
-    color: #333;
+.social-icons a {
+    color: #f2aa24;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
     margin: 0 10px;
 }
 
-footer a:hover {
-    color: #f0e68c;
-    border-bottom: 2px solid #f0e68c;
+.footer-links a:hover {
+    text-decoration: underline;
 }
