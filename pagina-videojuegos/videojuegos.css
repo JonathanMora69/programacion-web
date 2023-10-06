@@ -1,16 +1,16 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    color: white;
+    color: #333;
 }
 
 a {
-    color: black;
+    color: #333;
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ h1 {
     font-weight: 600;
     margin: 10px 0;
     line-height: 1.2;
-    color: white;
+    color: #333;
 }
 
 h2 {
@@ -29,6 +29,10 @@ h2 {
     line-height: 1.2;
 }
 
+.imagenPrincipal{
+    width: 80%;
+
+}
 img {
     width: 100%;
 }
@@ -49,7 +53,7 @@ p {
 }
 
 .navbar {
-    background-color: orange;
+    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
     height: 70px;
     padding: 0 30px;
 }
@@ -59,6 +63,7 @@ p {
     font-weight: 300;
     margin: 10px 0;
     line-height: 1.2;
+    color: #333;
 }
 
 .navbar .flex {
@@ -73,7 +78,7 @@ p {
 }
 
 .navbar a {
-    color: white;
+    color: #333;
     padding: 9px;
     margin: 10px 0;
 }
@@ -85,7 +90,7 @@ p {
 
 .showcase {
     height: 300px;
-    background-color: orange;
+    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
 }
 
 .showcase p {
@@ -107,8 +112,7 @@ p {
     grid-template-columns: 60% 40%;
 }
 
-.grid-item-1,
-.grid-item-2 {
+.grid-item-1, .grid-item-2 {
     position: relative;
     top: 50px;
 }
@@ -121,10 +125,10 @@ p {
     padding-left: 6px;
 }
 
-.btn-contact {
+.btn {
     border-radius: 6px;
     padding: 12px 20px;
-    background-color: #f2aa24; /* Nuevo color para el botón Contactar */
+    background-color: #f2aa24;
     border: none;
     margin-left: 10px;
     color: #fff;
@@ -145,7 +149,7 @@ p {
 }
 
 .title {
-    color: black;
+    color: #333;
     font-size: 20px;
     text-align: left;
     padding-left: 10px;
@@ -153,7 +157,7 @@ p {
 }
 
 .text {
-    color: black;
+    color: #333;
     font-size: 19px;
     width: 100%;
     padding: 10px;
@@ -178,11 +182,11 @@ p {
 }
 
 .stats .fa {
-    color: orange;
+    color: #f0f0f0; /* Cambiar a un tono de gris claro */
 }
 
 .testimonial {
-    color: black;
+    color: #333;
     margin-bottom: 30px;
 }
 
@@ -203,14 +207,14 @@ p {
 
 .card {
     padding: 10px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 15px;
     box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2), 7px 7px 20px rgba(0, 0, 0, 0.2);
 }
 
 .circle {
     background-color: transparent;
-    border: 3px solid orange;
+    border: 3px solid #f2aa24; /* Mantener el color naranja */
     height: 90px;
     position: relative;
     top: 30px;
@@ -225,12 +229,12 @@ p {
 }
 
 footer {
-    background-color: orange;
+    background-color: #f0f0f0; /* Cambiar a un tono de gris claro */
     padding: 20px 10px;
 }
 
 footer a {
-    color: white;
+    color: #333;
     margin: 0 10px;
 }
 
